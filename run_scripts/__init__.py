@@ -2,7 +2,6 @@ import os
 import sys
 import datetime
 import torch
-from sqlalchemy.ext.declarative import declarative_base
 from tensorboardX import SummaryWriter
 import matplotlib as mpl
 
@@ -64,7 +63,6 @@ else:
 print_("Device: {}".format(device))
 
 
-Base = declarative_base()
 if tensorboard_logging:
     tensorboard_writer = SummaryWriter(JOB_DIR + '/tensorboardX')
 else:
