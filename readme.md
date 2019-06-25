@@ -1,7 +1,6 @@
 # Complex Signal Denoising and Interference Mitigation for Automotive Radar Using Convolutional Neural Networks #
 
-This repository contains the code for training and evaluating CNNs for automotive radar signal denoising as introduced in the following paper:
-**Complex Signal Denoising and Interference Mitigation for Automotive Radar Using Convolutional Neural Networks (FUSION 2019)**
+This repository contains the code for training and evaluating CNNs for automotive radar signal denoising as introduced in the paper [**Complex Signal Denoising and Interference Mitigation for Automotive Radar Using Convolutional Neural Networks**](https://arxiv.org/abs/1906.10044)
 
 ## Citation
 If you find this approach useful in your research, please consider citing:
@@ -18,12 +17,13 @@ If you find this approach useful in your research, please consider citing:
 
 1. Clone this repository: `git clone https://github.com/johanna-rock/im_ricnn.git`
 2. Create a virtual environment from the included environment.yml and activate it
-    a. Create using conda: `conda env create -f environment.yml`
-    b. Activate using conda: `conda activate im-cnn-env`
-3. Download simulated sample data from [https://cloud.tugraz.at/index.php/s/gWpr5RfzKBdbAaW](https://cloud.tugraz.at/index.php/s/gWpr5RfzKBdbAaW), unzip the file and save it to `data/radar-data`.
+	1. Create using conda: `conda env create -f environment.yml`
+	2. Activate using conda: `conda activate im-cnn-env`
+3. Set the python path using `export PYTHONPATH="/path/to/imRICnn"`
+4. Download simulated sample data from [https://cloud.tugraz.at/index.php/s/gWpr5RfzKBdbAaW](https://cloud.tugraz.at/index.php/s/gWpr5RfzKBdbAaW), unzip the file and save it to `imRICnn/data/radar-data`.
 
 ## Training
-Run `run_scripts/run_training.py` to train and evaluate a CNN with the specified configuration.
+Run `python -m run_scripts.run_training.py` to train and evaluate a CNN with the configuration specified in run_training.py.
 
 ## Evaluation
-Run `run_scripts/run_evaluation.py` to evaluate a pre-trained model with the specified configuration.
+Run `python -m run_scripts.run_evaluation.py` to evaluate a pre-trained model with the configuration specified in run_evaluation.py.

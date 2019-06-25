@@ -147,5 +147,3 @@ dependencies:
     - sewar==0.4
     - tensorboardx==1.4
     - torch==0.4.1.post2
-prefix: /home/rck/.conda/envs/nn-env
-
