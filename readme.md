@@ -20,7 +20,7 @@ If you find this approach useful in your research, please consider citing:
 	1. Create using conda: `conda env create -f environment.yml`
 	2. Activate using conda: `conda activate im-cnn-env`
 3. Set the python path using `export PYTHONPATH="/path/to/imRICnn"`
-4. Download simulated sample data from [https://cloud.tugraz.at/index.php/s/6GEjJaGcf7eKp2B](https://cloud.tugraz.at/index.php/s/6GEjJaGcf7eKp2B), unzip the file and save it to `imRICnn/data/radar-data`.
+4. Download a reduced data set of simulated radar examples (200 training, 25 validation, 25 test) from [https://cloud.tugraz.at/index.php/s/6GEjJaGcf7eKp2B](https://cloud.tugraz.at/index.php/s/6GEjJaGcf7eKp2B), unzip the file and save it to `imRICnn/data/radar-data`. The full data set of simulated examples is now also available, you can download it from [https://nextcloud.spsc.tugraz.at/s/2qEEP6D2rHtFX64](https://nextcloud.spsc.tugraz.at/s/2qEEP6D2rHtFX64).
 
 ## Training
 Run `python -m run_scripts.run_training.py` to train and evaluate a CNN with the configuration specified in run_training.py.
